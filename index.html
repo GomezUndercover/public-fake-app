@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LifeInvader - Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1 onclick="toMainPage()">LifeInvader</h1>
+        <div class="user-menu-nav">
+            <div class="main-user-profile-container">
+                <img src="resources/unu.jpg" alt="userpfp" class="main-user-pfp" id="main-user-pfp" onclick="toMainUserProfile()">
+            </div>
+        </div>
+    </header>
+
+    <main class="main-container">
+        <section class="user-feed">
+
+            <div class="post-metadata">
+                <h2 class="post-title">Cool dog looks very cool relaxing all cool!</h2>
+                <time datetime="2024-01-10" class="post-date">1/10/2024</time>
+                <p class="post-author">by Ellen Joe</p>
+                <p class="post-description"><b>BREAKING NEWS:</b> This dog looks very relaxed and undisturbed, we will
+                    continue to update if this splendid specimen does anything else that isn't being cool.</p>
+
+                <div class="post-thumbnail">
+                    <img src="resources\dadoge.jpg" alt="cool dog" id="post-thumbnail">
+                </div>
+            </div>
+
+            <div class="post-comments-display">
+                <h4>Comments</h4>
+                <div class="post-comment">
+                    <img src="resources/ooooo.jpg" alt="" id="user-profile-image">
+                    <div>
+                        <p class="username">@UserName1</p>
+                        <p>Pagina todo cagao</p>
+                    </div>
+                    <div>
+                        <img src="resources/bee.png" alt="" id="user-profile-image">
+                        <p class="username">@UserName2</p>
+                        <p>Dog looks very relaxed, very cool.</p>
+                    </div>
+                    <div>
+                        <img src="resources\catg.jpeg" id="user-profile-image">
+                        <p class="username">@ユーザー３</p>
+                        <p>このコメントが日本語です !</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="chat-display" id="chat">
+
+            <h3>Chat with friends!</h3>
+            <div class="friends-list">
+                <div class="friend">
+                    <img src="resources/friend1.png" alt="Persona Random 1" class="friend-pfp">
+                    <p onclick="toRandomPerson1()">Persona Random 1 <b>click me!</b></p>
+                </div>
+                <div class="friend">
+                    <img src="resources/friend2.jpg" alt="Persona Random 2" class="friend-pfp">
+                    <p>Persona Random 2</p>
+                </div>
+                <div class="friend">
+                    <img src="resources/friend3.png" alt="Persona Random 3" class="friend-pfp">
+                    <p>Persona Random 3</p>
+                </div>
+                <div class="friend">
+                    <img src="resources/dadoge.jpg" alt="Persona Random 4" class="friend-pfp">
+                    <p>Persona Random 4</p>
+                </div>
+                <div class="friend">
+                    <img src="resources/bee.png" alt="Persona Random 5" class="friend-pfp">
+                    <p>Persona Random 5</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <div class="chat-image-container">
+        <img src="resources\Chat+Icon.png" alt="chat-icon" class="chat-icon">
+    </div>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h4>About Us</h4>
+                <p>LifeInvader is a social platform where users can share their daily life updates and connect with
+                    friends.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Contact Us</h4>
+                <p>Email: support@lifeinvader.com</p>
+                <p>Phone: +123 456 7890</p>
+                <p>Address: calle 41 x 48 Col. Ricardo Flores Magon, Escarcega, Campeche, MX</p>
+            </div>
+            <div class="footer-section">
+                <h4>Follow Us</h4>
+                <ul class="social-links">
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">LinkedIn</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Legal</h4>
+                <ul>
+                    <li><a href="#">Terms of Service</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2024 LifeInvader. All Rights Reserved.
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>

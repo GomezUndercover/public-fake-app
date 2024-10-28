@@ -1,0 +1,253 @@
+body {
+    font-family: "Barlow", sans-serif;
+    background: #e9eef2;
+    font: 83.33% / 150% "Segoe UI", "Helvetica Neue", "Nimbus Sans L", Arial, "Liberation Sans", sans-serif;
+    color: #4d4d4d;
+}
+
+header {
+    padding: 10px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #bbb;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, .16);
+    background: #fff;
+    background-image: linear-gradient(#e2e9f3 0%, #fff 70%);
+}
+
+h1 {
+    display: inline;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+.user-menu-nav {
+    display: inline;
+    cursor: pointer;
+    font-size: 1.5rem;
+    text-align: right;
+}
+
+.main-user-pfp{
+    display: inline;
+    border: 1px solid black;
+    border-radius: 20px;
+    width: 40px;
+    height: 40px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.main-container {
+    margin: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 20px;
+}
+
+.chat-display, .user-bio-section{
+    background-color: whitesmoke;
+    padding: 1rem;
+    border: 1px solid #b8b8b8;
+    border-radius: 8px;
+    overflow-wrap: break-word;
+}
+
+#profile-pic{
+    max-height: 200px;
+}
+.chat-display {
+    flex: 1 1 20%;
+    max-height: min-content;
+    position: static;
+    top: 80px;
+    background: #fff;
+}
+
+.user-bio-section{
+    flex: 1 1 70%;
+    background: #fff;
+    background-image: linear-gradient(#e2e9f3 0%, #fff 8%);
+}
+.friends-list>div>p{
+    cursor: pointer;
+}
+
+.friends-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.friend {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 5px 0;
+}
+
+.friend-pfp {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.friend p {
+    margin: 0;
+    font-size: 0.90rem;
+    color: black;
+}
+
+.user-feed {
+    flex: 1 1 70%;
+    background: #fff;
+    background-image: linear-gradient(#e2e9f3 0%, #fff 8%);
+}
+
+#profile-pic {
+    border: 1px solid black;
+    border-radius: 25px;
+}
+
+.chat-image-container{
+    position: fixed;
+    right: 1.5rem;
+    bottom: 1.5rem;
+    cursor: pointer;
+}
+
+.chat-icon{
+    width: 70px;
+    height: 70px;
+}
+
+.chat-icon:hover{
+    filter: drop-shadow(10px 10px 20px rgba(36, 36, 36, 0.5));
+}
+
+.friend-pfp>p:hover{
+    filter: drop-shadow(10px 10px 20px rgba(36, 36, 36, 0.5));
+}
+
+footer {
+    background-color: #051725;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    font-family: "Barlow", sans-serif;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 0 1rem;
+}
+
+.footer-section {
+    flex: 1 1 200px;
+    margin: 10px;
+    text-align: left;
+}
+
+.footer-section h4 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #f0f0f0;
+}
+
+.footer-section p, .footer-section ul, .footer-section li {
+    font-size: 0.9rem;
+    margin: 5px 0;
+    color: #ccc;
+}
+
+.footer-section a {
+    color: #ccc;
+    text-decoration: none;
+}
+
+.footer-section a:hover {
+    color: dodgerblue;
+}
+
+.social-links {
+    list-style-type: none;
+    padding: 0;
+}
+
+.social-links li {
+    margin-bottom: 5px;
+}
+
+.footer-bottom {
+    border-top: 1px solid #08172d;
+    padding-top: 10px;
+    font-size: 0.85rem;
+    color: #888;
+}
+
+@media (max-width: 425px) {
+    .main-container {
+        margin: 0.25rem;
+        gap: 5px;
+    }
+
+    header {
+        justify-content: space-between;
+    }
+
+    .user-menu-nav {
+        font-size: 0.8rem;
+        text-align: right;
+        right: 0;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .main-container {
+        flex-direction: column;
+    }
+
+    .user-bio-section{
+        width: 90%;
+    }
+
+    .chat-display {
+        display: none;
+    }
+
+    .post-thumbnail {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        margin-top: 1rem;
+    }
+
+    .chat-icon{
+        height: 60px;
+        width: 60px;
+    }
+
+    .footer-section h4 {
+        font-size: 1rem;
+    }
+
+    .footer-section p, 
+    .footer-section ul, 
+    .footer-section li {
+        font-size: 0.85rem;
+    }
+
+    .footer-bottom {
+        font-size: 0.75rem;
+    }
+}
