@@ -18,3 +18,11 @@ function toMainPage(){
 function toRandomPerson1(){
     location.href = "persona-random1.html"
 }
+
+function toYars(){
+    location.href = "yars.html"
+}
+
+function toCarla(){
+    location.href = "carla.html"
+}

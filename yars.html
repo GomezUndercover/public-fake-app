@@ -4,13 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LifeInvader - Home</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Profile - u\Persona Random 1</title>
+    <link rel="stylesheet" href="profile-site.css">
 </head>
 
 <body>
     <header>
-        <h1 onclick="toMainPage()">LifeInvader</h1>
+        <h1 id="h1" onclick="toMainPage()">LifeInvader</h1>
         <div class="user-menu-nav">
             <div class="main-user-profile-container">
                 <img src="resources/unu.jpg" alt="userpfp" class="main-user-pfp" id="main-user-pfp" onclick="toMainUserProfile()">
@@ -19,44 +19,22 @@
     </header>
 
     <main class="main-container">
-        <section class="user-feed">
 
-            <div class="post-metadata">
-                <h2 class="post-title">Cool dog looks very cool relaxing all cool!</h2>
-                <time datetime="2024-01-10" class="post-date">1/10/2024</time>
-                <p class="post-author">by Ellen Joe</p>
-                <p class="post-description"><b>BREAKING NEWS:</b> This dog looks very relaxed and undisturbed, we will
-                    continue to update if this splendid specimen does anything else that isn't being cool.</p>
-
-                <div class="post-thumbnail">
-                    <img src="resources\dadoge.jpg" alt="cool dog" id="post-thumbnail">
-                </div>
+        <section class="user-bio-section">
+            <div class="profile-pic-container">
+                <img src=" " alt="PONGAN SU FOTO ACA" id="profile-pic">
             </div>
-
-            <div class="post-comments-display">
-                <h4>Comments</h4>
-                <div class="post-comment">
-                    <img src="resources/ooooo.jpg" alt="" id="user-profile-image">
-                    <div>
-                        <p class="username">@UserName1</p>
-                        <p>Pagina todo cagao</p>
-                    </div>
-                    <div>
-                        <img src="resources/bee.png" alt="" id="user-profile-image">
-                        <p class="username">@UserName2</p>
-                        <p>Dog looks very relaxed, very cool.</p>
-                    </div>
-                    <div>
-                        <img src="resources\catg.jpeg" id="user-profile-image">
-                        <p class="username">@ユーザー３</p>
-                        <p>このコメントが日本語です !</p>
-                    </div>
-                </div>
+            <div class="bio">
+                <h2>Campechanito</h2>
+                <span> <i>NOMBRE ACA</i></span>
+                <p>Ubicación: PONGNA CASA</p>
+                <h3>Acerca de mi</h3>
+                <p>...
+                </p>
             </div>
         </section>
 
         <section class="chat-display" id="chat">
-
             <h3>Chat with friends!</h3>
             <div class="friends-list">
                 <div class="friend">
@@ -65,11 +43,11 @@
                 </div>
                 <div class="friend">
                     <img src="resources/friend2.jpg" alt="Persona Random 2" class="friend-pfp">
-                    <p onclick="toYars()">Campechanito <b>click me!</b></p>
+                    <p>Persona Random 2</p>
                 </div>
                 <div class="friend">
                     <img src="resources/friend3.png" alt="Persona Random 3" class="friend-pfp">
-                    <p onclick="toCarla()">Alrac <b>click me!</b></p>
+                    <p>Persona Random 3</p>
                 </div>
                 <div class="friend">
                     <img src="resources/dadoge.jpg" alt="Persona Random 4" class="friend-pfp">
@@ -82,16 +60,14 @@
             </div>
         </section>
     </main>
-
     <div class="chat-image-container">
-        <img src="resources\Chat+Icon.png" alt="chat-icon" class="chat-icon">
+        <img src="resources\Chat+Icon.png" alt="chat-icon" class="chat-icon" onclick="showChat()">
     </div>
     <footer>
         <div class="footer-container">
             <div class="footer-section">
                 <h4>About Us</h4>
-                <p>LifeInvader is a social platform where users can share their daily life updates and connect with
-                    friends.</p>
+                <p>LifeInvader is a social platform where users can share their daily life updates and connect with friends.</p>
             </div>
             <div class="footer-section">
                 <h4>Contact Us</h4>
